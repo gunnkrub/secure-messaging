@@ -15,17 +15,28 @@
     </div>
 
     <div th:if="${authenticated}">
+<<<<<<< HEAD
         Logged in as: <span th:text="${user}"></span>
+=======
+        Logged in as: <spac th:text="${user}"></spac>
+
+>>>>>>> 9db68f9d8f93b4c351602e541f1f324ad6b83aa1
         <ul>
             <li><a th:href="@{/message}">View message</a></li>
             <li><a th:href="@{/post}">Post new message</a></li>
         </ul>
 
+<<<<<<< HEAD
         <p>
         <form th:action="@{/logout}" method="POST">
             <button type="submit" class="btn btn-primary">Logout</button>
         </form>
         </p>
+=======
+        <form th:action="@{/logout}" method="POST">
+            <button type="submit" class="btn btn-primary">Logout</button>
+        </form>
+>>>>>>> 9db68f9d8f93b4c351602e541f1f324ad6b83aa1
     </div>
 </div>
 
