@@ -26,7 +26,7 @@ public class HashService {
         byte[] hashedValue = null;
 
         KeySpec spec = new PBEKeySpec(data.toCharArray(),
-                salt.getBytes(), 5000, 128);
+                salt.getBytes(), 100000, 128);
 
         try {
             SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
